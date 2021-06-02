@@ -1,7 +1,7 @@
 # DamnScaryHackingTool
 
-  Hello and welcome to my shell script.
-This shell script has 4 different types of attacks inside of it:
+Hello and welcome to my shell script.
+This shell script has 6 different types of attacks inside of it:
 
 1. MITM Attack
 2. AirKiller Program (Used for Cracking WiFi passwords)
