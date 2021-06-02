@@ -7,6 +7,8 @@ This shell script has 4 different types of attacks inside of it:
 2. AirKiller Program (Used for Cracking WiFi passwords)
 3. DOS Attack
 4. Sends deauthentication and disassociation packets
+5. Beacon Swarm
+6. SQL Injection
 
 To run the program type "bash damnscary.sh" after going inside of the directory.
 
@@ -23,6 +25,8 @@ To run the program you need the following programs installed:
 5. arpspoof
 
 6. gnome-terminal
+
+7. sqlmap
 ------------------------------------------
 
 IMPORTANT: I DO NOT OWN ANY RIGHTS TO ANY OF THE PROGRAMS IN THIS SHELL SCRIPT. I DO OWN THE AIR KILLER PROGRAM BUT DO NOT OWN THE PROGRAMS INSIDE OF IT
