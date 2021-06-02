@@ -10,7 +10,19 @@ This shell script has 6 different types of attacks inside of it:
 5. Beacon Swarm
 6. SQL Injection
 
-To run the program type "bash damnscary.sh" after going inside of the directory.
+INSTALLATION
+-------------------------------------------
+To install the program type: sudo git clone https://github.com/ZigedZaged123/DamnScaryHackingTool
+
+RUNNING THE PROGRAM
+-------------------------------------------
+
+First type: cd DamnScaryHackingTool
+
+Then type: bash damnscary.sh
+
+And there you go!
+------------------------------------------
 
 To run the program you need the following programs installed:
 
