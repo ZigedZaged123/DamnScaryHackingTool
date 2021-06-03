@@ -230,6 +230,8 @@ then
 	then
 		sudo airmon-ng start $card
 		clear
+		iwconfig
+		echo ""
 		echo "What is your new wireless card?"
 		read card
 	fi
