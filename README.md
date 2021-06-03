@@ -12,10 +12,14 @@ This shell script has 6 different types of attacks inside of it:
 
 INSTALLATION
 -------------------------------------------
+Open the terminal
+
 To install the program type: sudo git clone https://github.com/ZigedZaged123/DamnScaryHackingTool
 
 RUNNING THE PROGRAM
 -------------------------------------------
+
+Open the terminal
 
 First type: cd DamnScaryHackingTool
 
