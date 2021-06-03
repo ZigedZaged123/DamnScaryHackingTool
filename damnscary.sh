@@ -307,15 +307,17 @@ then
 		nano blacklist.txt
 		clear
 		echo "$red"
-	fi
-	echo ""
-	echo "Do you want to create a whitlist for non-targets?"
-	read w
-	if [[ $w == "yes" ]]
+	elif [[ $t == "no" ]]
 	then
 		echo ""
-		nano whitelist.txt
-		echo "$red"
+		echo "Do you want to create a whitlist for non-targets?"
+		read w
+		if [[ $w == "yes" ]]
+		then
+			echo ""
+			nano whitelist.txt
+			echo "$red"
+		fi
 	fi
 	clear
 	echo ""
@@ -480,13 +482,6 @@ then
 	read hellomanhowisitgoingthanksforreadingthiscode
 	bash damnscary.sh
 fi
-
-
-
-
-
-
-
 
 
 
