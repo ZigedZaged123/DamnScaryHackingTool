@@ -58,8 +58,124 @@ echo "4. Sends deauthentication and disassociation packets"
 echo "5. Beacon Swarm"
 echo "6. SQL Injection"
 echo ""
+echo "Type help to go to the help page and learn about how the attacks work and what they do."
+echo ""
 echo ""
 read weapon
+if [[ $weapon == "help" || $weapon == "Help" || $weapon == "HELP" ]]
+then
+        helppg=$'\e[96;42;1m'
+        echo "$helppg"
+        clear
+        echo ""
+        echo ""
+        echo "HELLO AND WELCOME TO THE HELP PAGE"
+        echo "THIS WILL SHOW HOW ALL OF THE ATTACKS WORK AND WHAT THEY DO"
+        echo ""
+        echo ""
+        echo "1. MITM Attack"
+        echo "2. AirKiller Program (Used for Cracking WiFi passwords)"
+        echo "3. DOS Attack"
+        echo "4. Sends deauthentication and disassociation packets"
+        echo "5. Beacon Swarm"
+        echo "6. SQL Injection"
+        echo ""
+        echo "Type home to go back home"
+        echo ""
+        echo ""
+        echo "Type the number of the attack you want to learn about."
+        read num
+	clear
+        if [[ $num == "1" ]]
+        then
+                echo ""
+                echo "A man in the middle attack is used to spy on people."
+                echo "How they work is actually pretty simple but really cool"
+                echo ""
+                echo "Basicly how they work is you tell a router that you are the device. Then you tell the device that you are the router."
+                echo "So then everything goes through you. But you still let them to connect to each other. Then to spy on them you look at it thorugh wireshark."
+                echo ""
+                echo ""
+                echo "Press enter to go home"
+                read akldfhgkljsdhgklslrjkghsrwiwrty856
+                bash damnscary.sh 
+        fi
+        if [[ $num == "2" ]]
+        then
+                echo ""
+                echo "The Air Killer program is a program I made that allows to to crack WiFi passwords"
+                echo ""
+                echo "When you are trying to crack WiFi passwords you need to find there mac address."
+                echo "Then after that you need to get a handshake. A handshake is where a device connects to the network."
+                echo "So the program will disconnect everyone from the network then they will automaticly reconnect."
+                echo "Then the program will try every password on a 10000 password list and will keep trying intill it gets the password right. This is called bruteforcing."
+                echo ""
+                echo ""
+                echo "Press enter to go home."
+                read dkfjhwuit
+                bash damnscary.sh
+        fi
+        if [[ $num == "3" ]]
+        then
+                echo ""
+                echo "A DOS attack stands for Denial Of Service. It diconnects everyone on the network(s)"
+                echo ""
+                echo "They way it works is pretty simple"
+                echo "The computer makes a bunch of fake devices to connect to the network untill the router just cant keep up and it crashes."
+                echo "You have to reset the router to fix it. (Unplug the router then plug it back in)"
+                echo ""
+                echo ""
+                echo "Press enter to go home."
+                read qwerty
+                bash damnscary.sh
+        fi
+        if [[ $num == "4" ]]
+        then
+                echo ""
+                echo "This attack sends out lots of bad packets that diconnect people"
+                echo "You can narrow down the channels, create a blacklist, create a whitelist, and narrow down a specific AP."
+                echo ""
+                echo ""
+                echo "Press enter to go home"
+                read sofgiuyjoeihgksn
+                bash damnscary.sh
+        fi
+        if [[ $num == "5" ]]
+        then
+                echo ""
+                echo "Beacon Swarm"
+                echo ""
+                echo ""
+                echo "A beacon swarm is just the way it sounds."
+                echo "It sends out a bunch of fake AP's to confuse hackers"
+                echo "You can choose from a list, one specific name, or random."
+                echo ""
+                echo ""
+                echo "Press enter to go home"
+                read arjedgileh
+                bash damnscary.sh
+        fi
+        if [[ $num == "6" ]]
+        then
+                echo ""
+                echo "SQL Injection"
+                echo ""
+                echo ""
+                echo "SQL injection finds bad spots inside of websites to access the databases inside of it and the information inside of the site."
+                echo "It is easy to get caught if you do to a website that is illegal to hack."
+                echo "I reccomend this website to hack. It was made to practice hacking on: http://testphp.vulnweb.com/artists.php?artist=1"
+                echo ""
+                echo ""
+                echo "Press enter to go to the home screen"
+                read sdfjgkslfg
+                bash damnscary.sh
+        fi
+        if [[ $num == "home" ]]
+        then
+                bash damnscary.sh
+        fi
+fi
+
 if [[ $weapon == "1" ]]
 then
 	echo "Do want to run Nmap or do you already have the IP address? ( nmap or ip )"
@@ -230,8 +346,6 @@ then
 	then
 		sudo airmon-ng start $card
 		clear
-		iwconfig
-		echo ""
 		echo "What is your new wireless card?"
 		read card
 	fi
@@ -484,6 +598,13 @@ then
 	read hellomanhowisitgoingthanksforreadingthiscode
 	bash damnscary.sh
 fi
+
+
+
+
+
+
+
 
 
 
