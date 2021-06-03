@@ -25,7 +25,7 @@ echo "------------------------------------------"
 echo ""
 echo ""
 echo "Press enter to continue to the home screen"
-read sdfgsdfgsdfgjuhasldiuyaetilgghelloman
+read sdfgsdfgsdfgjuhasldiuyaetilgghellomanhey
 clear
 echo ""
 echo "IMPORTANT: I DO NOT OWN ANY RIGHTS TO ANY OF THE PROGRAMS IN THIS SHELL SCRIPT. I DO OWN THE AIR KILLER PROGRAM BUT DO NOT OWN THE PROGRAMS INSIDE OF IT"
