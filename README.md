@@ -23,6 +23,8 @@ Open the terminal
 
 First type: cd DamnScaryHackingTool
 
+To set up the program type: bash SETUP.sh
+
 Then type: bash damnscary.sh
 
 And there you go!
