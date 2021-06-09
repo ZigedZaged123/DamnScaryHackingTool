@@ -43,6 +43,10 @@ To run the program you need the following programs installed:
 6. gnome-terminal
 
 7. sqlmap
+
+8. figlet
+
+9. toilet
 ------------------------------------------
 
 IMPORTANT: I DO NOT OWN ANY RIGHTS TO ANY OF THE PROGRAMS IN THIS SHELL SCRIPT. I DO OWN THE AIR KILLER PROGRAM BUT DO NOT OWN THE PROGRAMS INSIDE OF IT
