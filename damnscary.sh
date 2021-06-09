@@ -28,6 +28,95 @@ echo "Press enter to continue to the home screen"
 read sdfgsdfgsdfgjuhasldiuyaetilgghellomanhey
 clear
 echo ""
+echo ""
+r=$(( ( RANDOM % 6 )  + 1 ))
+if [[ $r == 1 ]]
+then
+	eye=$'\e[37;1m'
+	pupil=$'\e[31;1m'
+	e=$'\e[90;1m'
+	
+	echo "$eye"
+	echo "888888888888888888888888888888888888888888888888888888"
+	echo "888888888888888888888888     8888888888888888888888888"
+	echo "888888888888888888                 8888888888888888888"
+	echo "88888888888888                         888888888888888"
+	echo "8888888888                                 88888888888"
+	echo "88888                 ________                  888888"
+	echo "88                   /        \                     88"
+	echo "8                   (     0    )                     8"
+	echo "88                   \________/                     88"
+	echo "88888                                           888888"
+	echo "8888888888                                 88888888888"
+	echo "88888888888888                         888888888888888"
+	echo "888888888888888888                 8888888888888888888"
+	echo "888888888888888888888888     8888888888888888888888888"
+	echo "888888888888888888888888888888888888888888888888888888"
+	echo ""
+	echo "                   BECOME A HACKER!                   "
+	echo "$red"
+fi
+if [[ $r == 2 ]]
+then
+	echo "$green"
+	echo "   __________________________"
+	echo "  /                         /|"
+	echo " /________________________ / |"
+	echo "|                         |  |"
+	echo "|                         |  |"
+	echo "|                         |  |"
+	echo "|       YOUR DEVICE       |  |"
+	echo "|    HAS BEEN COMPLETLY   |  |"
+	echo "|         HACKED!         |  |"
+	echo "|                         |  |"
+	echo "|                         |  |"
+	echo "|                         |  |"
+	echo "|                         | /"
+	echo "|_________________________|/"
+	echo "          |    |"
+	echo "        (________)"
+	echo ""
+	echo ""
+	echo "YOU ARE MORE THAN YOU THINK"
+	echo "     YOU CAN DO THIS"
+	echo ""
+fi
+if [[ $r == 3 ]]
+then
+	echo "$yellow"
+	figlet "JOKE TIME!"
+	echo ""
+	echo "What do you call a cold baby pepper?"
+	echo "A Little Chili!"
+	echo "Now thats funny!"
+fi
+if [[ $r == 4 ]]
+then
+	echo "$yellow"
+	figlet "JOKE TIME!"
+	echo ""
+	echo "Knock Knock!"
+	echo "Who's There?"
+	echo "This is not a Knock Knock Joke. The FBI is taking you away for hacking."
+fi
+if [[ $r == 5 ]]
+then
+	echo ""
+	echo "$green"
+	toilet "YA LIKE    JAZZ!"
+fi
+if [[ $r == 6 ]]
+then
+	echo ""
+	echo "$yellow"
+	echo "5 + 5 = 11"
+	echo ""
+	echo "See this is why I dont do math. I hack."
+fi
+echo "$red"
+echo ""
+echo "=============================================================================="
+echo ""
 echo "IMPORTANT: I DO NOT OWN ANY RIGHTS TO ANY OF THE PROGRAMS IN THIS SHELL SCRIPT. I DO OWN THE AIR KILLER PROGRAM BUT DO NOT OWN THE PROGRAMS INSIDE OF IT"
 echo ""
 echo "LEGAL DISCLAMER: THIS PROGRAM IS ONLY TO BE USED FOR A GOOD LEARNING TOOL. NOT TO CAUSE ANY TROUBLE OR TO GET YOUR SELF ARRESTED. IF YOU DO USE THIS FOR BAD THINGS; I THE CREATOR WILL NOT TAKE RESPONSIBILITY."
@@ -598,7 +687,6 @@ then
 	read hellomanhowisitgoingthanksforreadingthiscode
 	bash damnscary.sh
 fi
-
 
 
 
