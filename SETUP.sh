@@ -15,6 +15,15 @@ then
 	fi
 	clear
 	echo ""
+	echo "Do want to install figlet and toilet?"
+	read x
+	if [[ $x == "yes" ]]
+	then
+		sudo apt install figlet
+		sudo apt install toilet
+	fi
+	clear
+	echo ""
 	echo "Do you want to install nmap?"
 	read x
 	if [[ $x == "yes" ]]
