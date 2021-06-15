@@ -68,9 +68,10 @@ then
 	fi
 	echo ""
 	echo "Moving into bin"
-	sudo cp ./damnscary.sh ./damnscary
-	sudo mv ./damnscary /usr/local/bin
+	cp ./damnscary.sh ./damnscary
+	mv ./damnscary /usr/local/bin/
 fi
 
-clear
+echo ""
+echo ""
 echo "Bye! Thank you for installing Damn Scary Hacking Tool!"
