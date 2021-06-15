@@ -15,15 +15,6 @@ then
 	fi
 	clear
 	echo ""
-	echo "Do want to install figlet and toilet?"
-	read x
-	if [[ $x == "yes" ]]
-	then
-		sudo apt install figlet
-		sudo apt install toilet
-	fi
-	clear
-	echo ""
 	echo "Do you want to install nmap?"
 	read x
 	if [[ $x == "yes" ]]
@@ -75,7 +66,11 @@ then
 		sudo make install
 		cd ..
 	fi
+	echo ""
+	echo "Moving into bin"
+	sudo cp ./damnscary.sh ./damnscary
+	sudo mv ./damnscary /usr/local/bin
 fi
+
 clear
 echo "Bye! Thank you for installing Damn Scary Hacking Tool!"
-
